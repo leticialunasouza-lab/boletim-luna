@@ -1,0 +1,150 @@
+/* Reset básico para padronizar os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333333;
+  padding: 20px;
+}
+
+/* Container principal para centralizar e limitar a largura */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho com o azul-marinho escolhido */
+header {
+  background-color: #0a2540; /* Azul-marinho */
+  color: #ffffff; /* Branco */
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Grid de Cards de Resumo */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Estilo individual de cada card */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  border: 1px solid #e0e6ed;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0a2540; /* Destaque em azul-marinho */
+}
+
+.card small {
+  display: block;
+  font-size: 0.75rem;
+  color: #2e7d32;
+  margin-top: 5px;
+}
+
+/* Container da Tabela com rolagem horizontal no celular */
+.tabela-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e6ed;
+  overflow-x: auto; /* Permite rolagem no celular se necessário */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e6ed;
+  font-size: 0.95rem;
+}
+
+/* Cabeçalho da tabela */
+th {
+  background-color: #0a2540;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f8fafc; /* Efeito suave ao passar o mouse */
+}
+
+/* Cores das Situações */
+.situacao-bom {
+  color: #1b5e20;
+  font-weight: bold;
+  background-color: #e8f5e9;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.situacao-atencao {
+  color: #b71c1c;
+  font-weight: bold;
+  background-color: #ffebee;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.situacao-indisponivel {
+  color: #616161;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Ajustes para telas de celular */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 18px 12px;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+}
